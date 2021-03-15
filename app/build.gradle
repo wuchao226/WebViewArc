@@ -1,0 +1,46 @@
+plugins {
+  id 'com.android.application'
+}
+
+android {
+  compileSdkVersion rootProject.compileSdkVersion
+  buildToolsVersion rootProject.buildToolsVersion
+
+  defaultConfig {
+    applicationId "com.wuc.webview"
+    minSdkVersion rootProject.minSdkVersion
+    targetSdkVersion rootProject.targetSdkVersion
+    versionCode 1
+    versionName "1.0"
+  }
+
+  buildTypes {
+    release {
+      minifyEnabled false
+      proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+    }
+  }
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+
+  // 开启打开Open DataBinding组件库
+  buildFeatures {
+    dataBinding = true
+    // for view binding :
+    // viewBinding = true
+  }
+}
+
+dependencies {
+  implementation "androidx.appcompat:appcompat:$rootProject.appcompat"
+  implementation "com.google.android.material:material:$rootProject.material"
+  implementation "androidx.constraintlayout:constraintlayout:$rootProject.constraintlayout"
+
+  annotationProcessor rootProject.googleAutoServiceDependency
+  implementation rootProject.googleAutoServiceDependency
+
+  implementation project(":WebView")
+  implementation project(":UserCenter")
+}

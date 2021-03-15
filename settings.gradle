@@ -1,0 +1,6 @@
+include ':UserCenter'
+include ':base'
+include ':common'
+include ':WebView'
+include ':app'
+rootProject.name = "WebViewArch"
