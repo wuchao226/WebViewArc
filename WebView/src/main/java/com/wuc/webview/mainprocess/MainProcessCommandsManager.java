@@ -1,11 +1,7 @@
 package com.wuc.webview.mainprocess;
 
-import android.content.ComponentName;
-import android.content.Intent;
 import android.os.RemoteException;
-import android.text.TextUtils;
 import com.google.gson.Gson;
-import com.wuc.base.BaseApplication;
 import com.wuc.webview.ICallbackFromMainprocessToWebViewProcessInterface;
 import com.wuc.webview.IWebviewProcessToMainProcessInterface;
 import com.wuc.webview.command.Command;

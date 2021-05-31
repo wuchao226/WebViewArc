@@ -7,7 +7,6 @@ import android.util.AttributeSet;
 import android.util.Log;
 import android.webkit.JavascriptInterface;
 import android.webkit.WebView;
-import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import com.google.gson.Gson;
@@ -16,7 +15,6 @@ import com.wuc.webview.bean.JsParam;
 import com.wuc.webview.webprocess.setting.WebViewDefaultSettings;
 import com.wuc.webview.webprocess.webchromeclient.WebChromeClientImpl;
 import com.wuc.webview.webprocess.webviewclient.WebViewClientImpl;
-import java.util.Map;
 
 /**
  * @author : wuchao5
